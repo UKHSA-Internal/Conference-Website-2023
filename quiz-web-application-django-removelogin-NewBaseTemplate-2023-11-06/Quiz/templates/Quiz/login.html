@@ -1,0 +1,15 @@
+{% extends 'Quiz/dependencies.html' %}
+{% load static%}
+{% block content %}
+<h1>Please Register to take the Technology Quiz!</h1>
+<h2>For chance to win a Technology Prize!</h2>
+<div class="container jumbotron">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p><input type="text" name="username" placeholder="Username..."></p>
+        <p><input type="password" name="password" placeholder="Password..." ></p>
+        <input class="btn btn-success" type="submit" value="Login">
+        <p>Do not have an account<a href='{% url 'register' %}'>Register</a></p>
+    </form>
+</div>
+{% endblock %}

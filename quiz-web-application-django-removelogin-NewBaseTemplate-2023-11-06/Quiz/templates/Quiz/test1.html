@@ -1,0 +1,69 @@
+{% extends 'Quiz/basev4.html' %}
+{% block content%}
+{% load static %}
+
+<h1>UKHSA Conference 2023 Technology Landing Page</h1>
+<h2>At a Glance:</h2>
+<img src="static/UKHSA master logo white 240x240.png" width =70>
+<h3>All the things you need to know about Technology this year</h3>
+
+<p>This year we encourage all to participate in our Technology quiz!</p>
+<p>All the answers will be revealled in the various presentations that will be delivered over the two days.</p>
+&nbsp;
+<h2>Agenda</h2>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr;
+  <!-- background-color: #2196F3; -->
+  padding: 10px;
+}
+
+.grid-item {
+  <!-- background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8); -->
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+<!-- css for button width -->
+.govuk-button {width: 50%;}
+
+
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item">
+    <h1>UKHSA Conference 2023 Technology Landing Page</h1>
+    <h2>At a Glance:</h2>
+    <h3>All the things you need to know about Technology this year</h3>
+
+    <p>This year we encourage all to participate in our Technology quiz!</p>
+    <p>All the answers will be revealled in the various presentations that will be delivered over the two days.</p>
+
+  </div>
+  <div class="grid-item">
+    <!-- <h2>Agenda</h2> -->
+  </div>
+
+  <div class="grid-item">
+    <h2>Agenda</h2>
+  </div>
+<!-- button experiment WORKS!!! -->
+<button type="submit" name="save" class="govuk-button" data-module="govuk-button">
+Submit
+</button>
+<!-- button end experiment WORKS!!!!!-->
+
+
+</div>
+
+</body>
+
+<div class="">
+</div>
+{%endblock%}

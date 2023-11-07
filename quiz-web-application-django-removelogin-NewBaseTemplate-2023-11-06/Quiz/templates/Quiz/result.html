@@ -1,0 +1,110 @@
+{% extends 'Quiz/basev4.html' %}
+
+{% block content %}
+  <a href="/" class="govuk-back-link">Return to Homepage</a>
+<!-- <div class="container ">
+
+    <div class="card-columns" style="padding: 10px; margin: 20px;">
+        <div class="card" align="centre " style="width: 32rem; border:0px black solid">
+            <div class="card-body">
+                <h5 class="card-title">Score: {{score}}</h5>
+
+                <p class="card-text">Percentage: {{percent}}%</p>
+                <p class="card-text">Time Taken: {{time}} seconds</p>
+                <p class="card-text">Correct answers: {{correct}}</p>
+                <p class="card-text">Incorrect answers: {{wrong}}</p>
+                <p class="card-text">Total questions: {{total}}</p>
+                <h5>All the best for next quiz!</h5>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+
+<dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Percentage
+    </dt>
+    <dd class="govuk-summary-list__value">
+      {{percent}}%
+    </dd>
+    <!-- <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Time Taken
+    </dt>
+    <dd class="govuk-summary-list__value">
+      {{time}} seconds
+    </dd>
+    <!-- <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Correct answers
+    </dt>
+    <dd class="govuk-summary-list__value">
+      {{correct}}
+    </dd>
+    <!-- <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> address</span>
+      </a>
+    </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Incorrect answers
+    </dt>
+    <dd class="govuk-summary-list__value">
+      {{wrong}}
+    </dd>
+    <!-- <dd class="govuk-summary-list__actions">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#">
+            Add<span class="govuk-visually-hidden"> contact details</span>
+          </a></li>
+        <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a></li>
+      </ul>
+    </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Total Questions
+    </dt>
+    <dd class="govuk-summary-list__value">
+      {{total}}
+    </dd>
+    <!-- <dd class="govuk-summary-list__actions">
+      <ul class="govuk-summary-list__actions-list">
+        <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#">
+            Add<span class="govuk-visually-hidden"> contact details</span>
+          </a></li>
+        <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a></li>
+      </ul>
+    </dd> -->
+  </div>
+</dl>
+
+
+  <p>Clicking this button will open a templated email with your results attached, please press send for a chance to win:</p>
+  <a href="mailto:ravi.dhirani@ukhsa.gov.uk?subject=UKHSA Technology Quiz Entry!&body=I have completed the quiz and I wish to enter into the prize draw.please confirm if you are affiliated with / Work in  UKHSA Technology Group"">
+    <button type="submit" name="save" class="govuk-button" data-module="govuk-button">
+  Enter the Prize Draw for a Chance to Win
+  </button>
+  </a>
+
+{% endblock %}

@@ -116,19 +116,6 @@
   }
   */
 
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  a::before {
-    content: "[";
-  }
-
-  a::after {
-    content: "]";
-  }
-
   .errorcode {
     color: white;
   }
@@ -155,6 +142,8 @@
 
 
 </style>
+
+
 </head>
 <!-- CSS Retro END  -->
 <div class="container ">
@@ -164,6 +153,8 @@
 
  <form method='post' action=''>
     {% csrf_token %}
+
+    <!--  Quiz For Loop-->
     {% for q  in questions%}
     <div class="form-group">
       <label for="question">{{q.question}}</label>
@@ -197,14 +188,24 @@
         <br>
     </div>
     {% endfor %}
+<!-- End of Quiz For Loop -->
 
+<!-- Text Field Feedback -->
+
+<!-- Larger Text Input -->
+<p>Lastly, do you have any other comments or feedback about the Technology Stand (or Technology in general) you would like to add?</p>
+<p>Do not include personal information, like your name, email or address.</p>
+  <textarea class="govuk-textarea" id ="full" name="Feedback-Additional-2" rows="5" aria-describedby="more-detail-hint"></textarea>
+</div>
+
+<!-- end of Text Field Feedback -->
     <button type="submit" name="save" class="govuk-button" data-module="govuk-button">
     Submit
     </button>
     <input id='timer' type='hidden' name="timer" value="">
     <br>
 
-  </form>
+  <!-- </form> -->
     {% block script %}
         <script>
 

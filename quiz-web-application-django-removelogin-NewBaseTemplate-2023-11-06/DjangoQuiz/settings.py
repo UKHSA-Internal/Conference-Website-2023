@@ -25,7 +25,7 @@ SECRET_KEY = '36jk%az^il&d66&dhy(j*!hu9b!oa2imidr5bwqcpwcuwz3cj8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # Turn this to false for production server
-ADMIN_ENABLED = True
+ADMIN_ENABLED = False
 ALLOWED_HOSTS = ["*"]
 
 

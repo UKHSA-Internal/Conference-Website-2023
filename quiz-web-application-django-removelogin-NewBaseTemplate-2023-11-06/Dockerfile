@@ -1,6 +1,6 @@
 # The first instruction is what image we want to base our container on
 # We Use an official Python runtime as a parent image
-FROM python:3.9
+FROM python:3.14.4
 ENV PYTHONUNBUFFERED 1
 
 # Create directory to store application code.
